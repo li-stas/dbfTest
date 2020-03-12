@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE datasources SYSTEM "dataSource.dtd">
+<datasources>
+    <datasource>
+        <source-name>JNDINamedbStudentWL</source-name>
+	<!-- url к базе данных jdbc:oracle:thin://хост:порт:SID -->
+        <connection-url>jdbc:oracle:thin:@localhost:1521:xe</connection-url>
+	<!-- имя класса-драйвера -->
+        <driver-class>oracle.jdbc.OracleDriver</driver-class>
+	<!-- логин/пароль -->
+	<user-name>STUDENT</user-name>
+        <password>admin</password>         
+    </datasource>
+</datasources>
