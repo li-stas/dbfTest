@@ -1,8 +1,8 @@
 package com.lista;
 
 import com.lista.dao.OracleDAOConnect;
-import com.lista.entry.DelOneEmp;
-import com.lista.entry.InsData2Emp;
+import com.lista.entry.DeleteOneEmp;
+import com.lista.entry.InsertData2Emp;
 import com.lista.entry.ShowAllEmp;
 import com.lista.entry.ShowOneEmp;
 import com.lista.service.ConnectDbStudent;
@@ -39,8 +39,8 @@ public class AppJdbc {
                 Menu menu = new Menu(1);
                 menu.addEntry(new MenuEntry("1 - Данные всех работников", false) { public void run() {new ShowAllEmp().eval(finalConn);} });
                 menu.addEntry(new MenuEntry("2 - Данные об одном работнике", false) { public void run() {new ShowOneEmp().eval(finalConn);} });
-                menu.addEntry(new MenuEntry("3 - Добавить работника", false) { public void run() {new InsData2Emp().eval(finalConn);} });
-                menu.addEntry(new MenuEntry("4 - Удалить работника", false) { public void run() {new DelOneEmp().eval(finalConn); } });
+                menu.addEntry(new MenuEntry("3 - Добавить работника", false) { public void run() {new InsertData2Emp().eval(finalConn);} });
+                menu.addEntry(new MenuEntry("4 - Удалить работника", false) { public void run() {new DeleteOneEmp().eval(finalConn); } });
                 System.out.print("\n\n");
                 nRet = menu.run();
                 if (nRet ==0 ) {

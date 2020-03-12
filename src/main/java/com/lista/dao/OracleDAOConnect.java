@@ -11,7 +11,6 @@ import java.util.Hashtable;
 
 public class OracleDAOConnect implements DAOConnect {
     private Connection connection;
-    private PreparedStatement preparedStatement;
     private static OracleDAOConnect oracleDAOConnect;
 
     public OracleDAOConnect() {

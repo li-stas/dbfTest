@@ -4,7 +4,7 @@ import com.lista.view.screens.doSrcIOException;
 
 import java.sql.*;
 
-public class InsData2Emp {
+public class InsertData2Emp {
     public void eval(Connection conn) {
         String sql;
         Statement stmt = null;

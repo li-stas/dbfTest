@@ -5,7 +5,7 @@ import com.lista.view.screens.doSrcIOException;
 
 import java.sql.*;
 
-public class DelOneEmp {
+public class DeleteOneEmp {
     public void eval(Connection conn) {
         String sql;
         int nEmpNo;
